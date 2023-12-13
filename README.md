@@ -7,7 +7,7 @@ SELECT ( READ )
 UPDATE ( UPDATE )
 DELETE ( DELETE )
 
-## Créer une bade de donnée si elle n'existe pas
+## Créer une base de donnée si elle n'existe pas
 CREATE DATABASE IF NOT EXISTS
 CREATE DATABASE "BaseDeDonnee"; Une base de donnée c'est une base qui va stocké des données donc des tables
 
@@ -46,7 +46,8 @@ DATE (La date)
 BOOLEAN (true, false)
 ENUM (Choix variable défini)
 
-ALTER TABLE nomTable 
+##
+    ALTER TABLE nomTable 
 ## J'ajoute une clé primaire
     ADD PRIMARY KEY ('nomColonne'), 
 ## J'ajoute une colonne
@@ -55,7 +56,12 @@ ALTER TABLE nomTable
     DROP nomColonne 
 ## Je modifie une colonne
     MODIFY nomColoneChien VARCHAR(200) 
+## Je change le nom d'une colonne
+    CHANGE nomColonneChien nomColonneChat
 ;
 Alter table permet de modifier une colonne de la table défini dans mon cas juste au dessus je défini la colonne nomColonne comme clé primaire
 
 
+# Clé Etrangère 
+Une clé etrangère c'est quand une colonne d'une table fait réference à une clé primaire d'une autre table
+Ils servent à faire en sorte que si on supprime le client de la base de donnée ca supprimera automatiquement toute ces commandes qu'il à effectué
