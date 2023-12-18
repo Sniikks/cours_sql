@@ -53,7 +53,7 @@ if ($result) {
                 </form>
                 <form action="./controllers/delete_ctrl.php" method="post">
                     <input type="hidden" name="id" value="' . $row['id'] . '">
-                    <button type="submit" onclick="return confirm(\'Voulez-vous vraiment supprimer ce livre?\');">Supprimer</button>
+                    <button type="submit" onclick="return confirm(\'Supprimer le livre?\');">Supprimer</button>
                 </form>
             </td>
         </tr>';
