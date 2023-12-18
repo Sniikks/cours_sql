@@ -1,7 +1,7 @@
 <?php
     session_start();
     if (empty($_SESSION)) {
-        header('Location: ../application.php');
+        header('Location: ../index.php');
     }
 ?>
 <!DOCTYPE html>
@@ -13,8 +13,7 @@
 </head>
 <body>
     <form action="../controllers/create_bug.php" method="post">
-        <input type="text" name="app_id" id="app_id" readonly style="display:none;" value="<?php echo $_GET 
-        ?>">    
+        <input type="text" name="app_id" id="app_id" readonly style="display:none;" value="<?php echo $_GET['software'] ?>">    
         <label for="owner">Nom</label>
         <input type="text" name="owner" id="owner">
 

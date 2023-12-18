@@ -9,6 +9,6 @@
     }        
     session_start();
     $_SESSION = $_POST;
-    header('Location: ../application.php');
+    header('Location: ../index.php');
 
 ?>

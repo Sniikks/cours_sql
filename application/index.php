@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav>
-            <a href="./application.php">Software</a>
+            <a href="./index.php">Software</a>
             <a href="./page/author.php">Author</a>
         </nav>
     </header>
