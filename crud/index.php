@@ -33,7 +33,7 @@ if ($result) {
                 <th>Titre</th>
                 <th>ISBN</th>
                 <th>Résumé</th>
-                <th>Actions</th> <!-- Nouvelle colonne pour les actions -->
+                <th>Actions</th>
             </tr>';
     
     while ($row = $result->fetch()) {
